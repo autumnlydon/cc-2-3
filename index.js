@@ -17,8 +17,19 @@
 
 const solution = (numbers) => {
   const newArr = [];
-  for (let i = 0; i < numbers.length; i++) {
+  let i = 0;
+  while (newArr.length < numbers.length) {
     first = numbers[i];
     last = numbers[numbers.length - 1 - i];
+    newArr.push(first);
+    if (i === numbers.length - 1 - i) {
+      break;
+    } else {
+      newArr.push(last);
+    }
+    i++;
   }
+  return newArr;
 };
+
+console.log(solution([0, 5, 6, 8, 2]));

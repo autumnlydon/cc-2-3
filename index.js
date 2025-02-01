@@ -14,3 +14,11 @@
 // };
 
 // Carmen's Solution:
+
+const solution = (numbers) => {
+  const newArr = [];
+  for (let i = 0; i < numbers.length; i++) {
+    first = numbers[i];
+    last = numbers[numbers.length - 1 - i];
+  }
+};

@@ -35,3 +35,5 @@ const solution = (numbers) => {
 console.log(solution([0, 5, 6, 8, 2]));
 
 // add more leetcode problems here
+
+// level 2 problem
